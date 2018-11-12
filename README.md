@@ -3,4 +3,4 @@
 # Andrey — General Manager
 # Vadim — Employee (Math)
 # Sasha — Employee (Debug)
-# Slava — Employee (Docs, if needed)
+#  — Employee (Docs, if needed)
