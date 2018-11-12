@@ -1,4 +1,4 @@
-# Tushino Software LLC
+# «Tushino Software LLC»
 # Anton — CEO
 # Andrey — General Manager
 # Vadim — Employee (Math)
