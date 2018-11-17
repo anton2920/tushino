@@ -1,6 +1,6 @@
 # «Tushino Software LLC»
 # Anton — CEO
-# Andrey — General Manager
+# Andrey — General Manager (Debug)
 # Vadim — Employee (Math)
-# Sasha — Employee (Debug)
-#  — Employee (Docs, if needed)
+# Sasha — Employee
+# Artyom — Employee (Docs, if needed)
