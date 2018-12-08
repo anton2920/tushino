@@ -41,5 +41,16 @@ int loop()
 
     return f;
 }
+int num_elem(void)
+{
+	int n;
+	do
+	{	
+		printf("Enter the number of elements\n");
+		scanf("%d",&n);
+	}while(n < 0 || n > 1024);
+	
+	return n;
+}
 
 
