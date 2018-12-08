@@ -1,6 +1,6 @@
 #include "../headers/head.h"
 
-int menu1()
+int menu()
 {
     int f;
     printf("----------Input type----------\n"
@@ -29,7 +29,7 @@ int menu2()
 
     return f;
 }
-int loop()
+int menu3()
 {
     int f;
     printf("You want to try again?\n"
