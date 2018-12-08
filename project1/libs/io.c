@@ -7,7 +7,7 @@ void swap(int *a, int *b)
 	*b = t;
 }
 
-void fill_random(int *arr, const int length)
+void read_rand(int *arr, const int *length)
 {
 	int range_min, range_max, i;
 
@@ -20,21 +20,21 @@ void fill_random(int *arr, const int length)
 	if (range_min > range_max)
 		swap(&range_min, &range_max);
 
-	for (i = 0; i < length; ++i)
+	for (i = 0; i < *length; ++i)
 		arr[i] = rand_number(range_min, range_max);
 }
 
 int rand_number(int range_min, int range_max)
 {
-	srand((unsigned)time(NULL));
 	return rand() % (range_max - range_min + 1) + range_min;
 }
 
-void read_from_bin(int *arr, const int length)
+void read_bfile(int *arr, const int *length)
 {
 	char name[100];
+	int i;
 	printf("Enter name of the file: ");
-	scanf("%s", &name);
+	scanf("%s", name);
 
 	FILE* input = NULL;
 	input = fopen(name, "rb");
@@ -42,7 +42,7 @@ void read_from_bin(int *arr, const int length)
 	if (input != NULL)
 	{
 		fseek(input, 0, SEEK_SET);
-		for (int i = 0; i < length; ++i)
+		for (i = 0; i < *length; ++i)
 		{
 			fread(&arr[i], sizeof(int), 1, input);
 		}
@@ -51,19 +51,19 @@ void read_from_bin(int *arr, const int length)
 	printf("File could not be open.\n");
 }
 
-void print_to_bin(int *arr, const int length)
+void write_bfile(const int *arr, const int *length)
 {
 	char name[100];
+	int i;
 	printf("Enter name of the file: ");
-	scanf("%s", &name);
+	scanf("%s", name);
 
 	FILE* output = NULL;
-	output = fopen(name, "w+b");
-	int num;
+	output = fopen(name, "wb");
 
 	if (output != NULL)
 	{
-		for (int i = 0; i < length; ++i)
+		for (i = 0; i < *length; ++i)
 		{
 			fwrite(&arr[i], sizeof(int), 1, output);
 		}
@@ -74,20 +74,19 @@ void print_to_bin(int *arr, const int length)
 
 }
 
-void read_from_txt(int *arr, const int length)
+void read_file(int *arr, const int *length)
 {
 	char name[100];
+	int i;
 	printf("Enter name of the file: ");
-	scanf("%s", &name);
+	scanf("%s", name);
 
 	FILE* file = NULL;
-	int size;
 	file = fopen(name, "r");
+
 	if (file != NULL)
 	{
-		fscanf(file, "%d", &size);
-
-		for (int i = 0; i < size; ++i)
+		for (i = 0; i < *length; ++i)
 		{
 			fscanf(file, "%d", &arr[i]);
 			printf("%d", arr[i]);
@@ -98,25 +97,51 @@ void read_from_txt(int *arr, const int length)
 		printf("File could not be open.\n");
 }
 
-void print_to_txt(int *arr, const int length)
+void write_file(const int *arr, const int *length)
 {
 	char name[100];
+	int i;
 	printf("Enter name of the file: ");
-	scanf("%s", &name);
+	scanf("%s", name);
 
 	FILE* file = NULL;
-	int size;
-	file = fopen(name, "w+");
+	file = fopen(name, "w");
 
 	if (file != NULL)
 	{
-		for (int i = 0; i < length; ++i)
+		for (i = 0; i < *length; ++i)
 		{
-			fprintf(file, "%d", &arr[i]);
+			fprintf(file, "%d", arr[i]);
 			printf("%d", arr[i]);
 		}
 		fclose(file);
 	}
 	else
 		printf("File could not be open.\n");
+}
+
+void read_key(int *mas, const int *n) {
+
+	/* Initializing variables */
+    int i;
+
+    /* Main part */
+    for (i = 0; i < *n; ++i) {
+        printf("| Type %d%s element: ", i, (i == 1) ? "st" : (i == 2) ? "nd" : (i == 3) ? "rd" : "th");
+        scanf("%d", mas + i);
+    }
+}
+
+void write_scr(const int *mas, const int *n) {
+
+    /* Initializing variables */
+    int i;
+
+    /* I/O flow */
+    for (i = 0; i < *n; ++i) {
+        printf("%d ", *(mas + i));
+    }
+
+    /* Final output */
+    printf("\n");
 }
