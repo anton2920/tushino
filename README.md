@@ -3,10 +3,10 @@
 Anton — CEO
 ===========
 
-# Andrey — Vice President
-## Vadim — Employee
-## Alina — Employee
+## Andrey — Vice President
+### Vadim — Employee
+### Alina — Employee
 
-# Bogdan — Vice President
-## Artyom — Employee
-## Sasha — Employee
+## Bogdan — Vice President
+### Artyom — Employee
+### Sasha — Employee
