@@ -1,9 +1,12 @@
-# «Tushino Software LLC»
-# Anton — CEO
+«Tushino Software LLC»
+======================
+Anton — CEO
+===========
+
 # Andrey — Vice President
-Bogdan — Vice President
-=======================
-# Vadim — Employee
-# Sasha — Employee
-# Artyom — Employee
-# Alina — Employee
+## Vadim — Employee
+## Alina — Employee
+
+# Bogdan — Vice President
+## Artyom — Employee
+## Sasha — Employee
