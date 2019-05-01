@@ -64,4 +64,5 @@ int main()
 		}
 	}
 	
+	printf("\n");
 }
