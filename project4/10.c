@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX(A, B) (((A) > (B)) ? (A) : (B))
-
 /* Function's declarations */
 int knapsack(int **, int, int, const int *, const int *);
 void items_in_optimal(int **t, int, int, const int *, const int *);
