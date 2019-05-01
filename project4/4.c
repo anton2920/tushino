@@ -7,16 +7,23 @@ int main()
 	int n, i, j;
 	int *a, p;
 	
-	printf("Enter the size of array: ");
-	scanf("%d",&n);
+	do
+	{
+		printf("Enter the size of array: ");
+		scanf("%d",&n);
+	}while(n <= 0);
 	
 	
 	a = (int *) malloc(n * sizeof(int));
 	
-	printf("Enter the array(1 - red, 2 - white, 3 - blue): ");
+	printf("Enter the array(1 - red, 2 - white, 3 - blue):\n");
 	for(i = 0; i < n; i++)
 	{
-		scanf("%d",&a[i]);
+		do
+		{
+			printf("a[%d] = ",i);
+			scanf("%d",&a[i]);
+		}while(a[i] < 1 || a[i] > 3);
 	}
 	printf("\n--------------------------------------------------------\n\n");
 	
@@ -53,6 +60,7 @@ int main()
 			case 1: printf(" red "); break;
 			case 2: printf(" white "); break;
 			case 3: printf(" blue "); break;
+			default: printf(" %d ", a[i]);
 		}
 	}
 	
