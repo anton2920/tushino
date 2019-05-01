@@ -17,11 +17,11 @@ bool cmp(Word& a, Word& b)
 {
 	if (a.order == b.order)
 		return a.word < b.word;
-	
+
 	return a.order < b.order;
 }
 
-void classification(std::vector<Word>& data)
+void classification(std::vector<Word> & data)
 {
 	bool all_caps;
 	std::size_t word_length;
@@ -90,13 +90,17 @@ int main()
 			std::cout << word << '\n';
 			data.emplace_back(word, 0);
 		}
+		
+		classification(data);
+		std::sort(data.begin(), data.end(), cmp);
+
+		std::cout << "\n\n Sorting words:\n";
+		for (auto& e : data)
+			std::cout << e.word << '\n';
 	}
 
-	classification(data);
-	std::sort(data.begin(), data.end(), cmp);
-
-	std::cout << "\n\n Sorting words:\n";
-	for (auto& e : data)
-		std::cout << e.word << '\n';
-
+	else
+	{
+		std::cout << "Couldn't open file!\n";
+	}
 }
