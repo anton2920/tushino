@@ -7,12 +7,11 @@ char surname[50];
 };
 
 bool check(NumberBook *A,int n);
+
 int main(){
 	FILE *S;
-	char s[30];
-	std::cout<<"Enter the name of file:";
-	std::cin>>s;
-	S=fopen(s,"r");
+	
+	S=fopen("8.txt","r");
 	int N;
 	fscanf(S,"%d",&N);
 	NumberBook *A=(NumberBook*)malloc(N*sizeof(NumberBook));
@@ -25,7 +24,7 @@ int main(){
 	fclose(S);
 	if (check(A,N)){
 		long long int choice;
-		std::cout<<"Enter Number:";
+		std::cout<<"Enter Number: ";
 		std::cin>>choice;
 		int Numb=round(log(N));
 		int left=0,right=N-1;
@@ -59,12 +58,15 @@ int main(){
 		if (flag){
 			std::cout<<A[rightI].surname;
 		}
-		else std::cout<<"Number dont exist";
+		else std::cout<<"Number dont exist\n";
 	}
 	else{
-		std::cout<<"Sorry, but you list isnt sorted";
+		std::cout<<"Sorry, but you list isn't sorted\n";
 	}
 	free(A);
+
+	printf("\n");
+
 	return 0;
 }
 bool check(NumberBook *A,int n){

@@ -3,5 +3,5 @@
 main() {
 
     /* Initializing variables */
-    
+
 }

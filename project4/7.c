@@ -45,4 +45,6 @@ int main() {
     }
     
     free(s);
+
+    printf("\n");
 }
