@@ -3,7 +3,6 @@
 #include <vector>	 
 #include <fstream>   
 #include <algorithm> // for std::sort
-
 struct Word
 {
 	std::string word;
@@ -103,4 +102,5 @@ int main()
 	{
 		std::cout << "Couldn't open file!\n";
 	}
+	return 0;
 }
