@@ -1,0 +1,148 @@
+﻿№1) Is it possible to transfer a structure to a function?
+1) Depends on the structure
+2) Only pointer to structure
+3) No
+4) Yes
+№2) Is it possible to pass a pointer to a structure into a function?
+1) Depends on the structure
+2) Only the structure itself
+3) No
+4) Yes
+№3) Can a structure return from a function?
+1) Depends on the structure
+2) Can only return a pointer to the structure
+3) No
+4) Yes
+№4) What is the keyword used to declare the structure?
+1) statec
+2) static
+3) stract
+4) struct
+№5) What is the name of the structure?
+1) Destructor
+2) Constructor
+3) Data
+4) Members
+№6) Which sign should be used at the end of the structure declaration?
+1) #
+2) $
+3) *
+4) ;
+№7) What is used to refer to field elements?
+1) Ammeter
+2) Operand
+3) Pointer
+№8) Which of the following is a member selection statement?
+1) #
+2) $
+3) *
+4) .
+№9) Select initialization using initializer lists?
+1) Employee john = [ 5, 27, 45000.0 ];
+2) Employee john  { 5, 27, 45000.0 };
+3) Employee john  [ 5, 27, 45000.0 ];
+4) Employee john = { 5, 27, 45000.0 };
+№10) Select initialization using initialization uniform?
+1) Employee john = [ 5, 27, 45000.0 ];
+2) Employee john = { 5, 27, 45000.0 }; 
+3) Employee john  [ 5, 27, 45000.0 ];
+4) Employee john  { 5, 27, 45000.0 };
+№11) What will happen if we did not indicate one or several elements in the list of initializers?
+1) Compile error
+2) There is no answer to this question.
+3) Garbage will remain
+4) The default value is 0.
+№12)Is it possible to set default values for structure members?
+1) Only not directly
+2) Yes, it was possible to C ++ 11
+3) No
+4) Yes, starting from C ++ 11
+№13) Is initialization of non-static members of a structure compatible with a list of initializers in C ++ 11
+1) Partially
+2) Need a library for compatibility
+3) Yes
+4) No
+№14) Is initialization of non-static members of a structure compatible with initialization uniform in C ++ 11?
+1) Partially
+2) Need a library for compatibility
+3) Yes
+4) No
+№15) Is the initialization of non-static members of a structure compatible with the list of initializers in C ++ 14?
+1) Partially
+2) Need a library for compatibility
+3) No
+№16) Is initialization of non-static members of a structure compatible with initialization uniform in C ++ 14?
+1) Partially
+2) Need a library for compatibility
+3) No
+4) Yes
+№17) Can one structure contain another?
+1) No, only a pointer to the structure
+2) No, only myself
+3) No
+4) Yes
+№18) What operator is used to refer to a field if we have a pointer to a structure?
+1) <.
+2) .
+3) <-
+4) ->
+№19) Is the size of the structure equal to the sum of the sizes of all its fields?
+1) I do not know
+2) No
+3) Equal
+4) Not always
+№20) Is it possible to somehow replace a-> k?
+1) a.k
+2) Нельзя
+3) *a.k
+4) (*a).k
+№21) Can the field of the structure be a pointer to itself
+1) I do not know
+2) Only the structure itself, but not the pointer
+3) No
+4) Yes
+№22) If at the end of the structure declaration write before; variable names, what will happen?
+1) Structures with the given name are created.
+2) Nothing
+3) Error
+4) Initialization
+№23) What is the structure?
+1) Ammeter
+2) Definiteness
+3) Complicated data type, allowing to place data of different types in the same place of RAM
+4) Combining several objects under one name, which is a type of structure
+№24) What is a union?
+1) Mugs
+2) Definiteness
+3) Combining several objects under the same name, which is a type of structure
+4) Complicated data type, allowing to place data of different types in the same place of RAM
+№25) What is the size of the memory required to store the associations?
+1) 8 bytes
+2) Unknown
+3) Amount of total data
+4) The amount of memory required to accommodate data of the type that requires the maximum number of bytes.
+№26) Is it possible to create an array of structures?
+1) Yes, but containing no more than 10 elements
+2) There is no exact answer.
+3) No
+4) Yes
+№27) How to find out the size of the structure?
+1) Calculate the sum of the sizes of the memory fields
+2) Calculate the sum of the sizes of the memory fields and add 2 to this value.
+3) NO
+4) Use the function sizeof (StructureName)
+№28) Can an array be a member of a structure?
+1) I do not know
+2) Not always
+3) No
+4) Yes
+№29) How are the structure fields located in memory?
+1) Depends on architecture
+2) Unknown
+3) In raznabros
+4) In the manner in which declared
+№30) What is typedef for?
+1) I do not know
+2) To connect files
+3) The main purpose of #typedef is to localize macro names only in those parts where they are needed.
+4) To create a pseudo of any data type and use it instead of the actual type name

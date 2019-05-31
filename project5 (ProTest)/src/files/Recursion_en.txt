@@ -1,0 +1,483 @@
+Recursion
+4.1 The algorithm for calculating the values ??of the functions F (n) and G (n), where n is a positive integer, is given by the following relations:
+F(1) = 1; G(1) = 1;
+F(n) = F(n - 1) - 2 * G(n - 1),
+G(n) = F(n - 1) + 2 * G(n - 1), with n >= 2
+What is the value of G(5) - F(5)? In the answer write down only an integer.
+a) -6
+b) 6
+c) -12
+d) 12
+d
+
+4.2 The algorithm for calculating the values ??of the functions F (n) and G (n), where n is a positive integer, is given by the following relations:
+F (1) = 1; G (1) = 1;
+F (n) = 3 * F (n - 1) - 2 * G (n - 1),
+G (n) = F (n - 1) + 2 * G (n - 1), with n >= 2
+What is the value of G(5) - F(5)? In the answer write down only an integer.
+a) 90
+b) -90
+c) 45
+d) -45
+a
+
+4.3 Given recursive algorithm:
+void F (int n) {
+  std :: cout << ? * ?;
+  if (n> 0) {
+    F (n - 2);
+    F (n / 2);
+    F (n / 2);
+  }
+}
+How many asterisks will be printed on the screen when making an F(5) call?
+a) 17
+b) 24
+c) 28
+d) 34
+d
+
+4.4 Given recursive algorithm:
+void F (int n) {
+  std :: cout << ? * ?;
+  if (n> 0) {
+    F (n - 2);
+    F (n - 2);
+    F (n / 2);
+  }
+}
+How many asterisks will be printed on the screen when making an F(6) call?
+a) 34
+b) 46
+c) 58
+d) 70
+c
+
+4.5 Given recursive algorithm:
+void F (int n) {
+  std :: cout << ? * ?;
+  if (n> 0) {
+    F (n - 3);
+    F (n - 2);
+    F (n / 2);
+    F (n / 2);
+  }
+}
+How many asterisks will be printed on the screen when making an F(6) call?
+a) 65
+b) 97
+c) 76
+d) 88
+b
+
+4.6 The algorithm for calculating the value of the function F (n), where n is a positive integer, is given by the following relations:
+F (1) = 1,
+F (n) = F (n - 1) + 2n-1, with n> 1
+What is the value of the function F(12)? In the answer write down only an integer.
+a) 4095
+b) 4096
+c) 2047
+d) 2048
+a
+
+4.7 Given a recursive algorithm:
+void F (int n) {
+  std :: cout << n;
+  if (n <5) {
+    F (n + 2);
+    F (n * 2);
+  }
+}
+Find the sum of the numbers that will be displayed when you call F(1).
+a) 46
+b) 53
+c) 56
+d) 54
+b
+
+4.8 Given a recursive algorithm:
+void F (int n) {
+  std :: cout << n;
+  if (n <5) {
+    F (n + 1);
+    F (n + 2);
+    F (n * 3);
+  }
+}
+Find the sum of the numbers that will be displayed when you call F(2).
+a) 76
+b) 79
+c) 82
+d) 88
+b
+
+4.9 Given a recursive algorithm:
+void F (int n) {
+  std :: cout << n;
+  if (n <6) {
+    std :: cout << n;
+    F (n + 1);
+    F (n * 2);
+    F (n * 3);
+  }
+}
+Find the sum of the numbers that will be displayed when you call F(2).
+a) 121
+b) 144
+c) 169
+d) 196
+c
+
+4.10 Given a recursive algorithm:
+int F (int n) {
+  if (n <5)
+    return F (n * 3) + F (n + 3) + F (n + 1);
+  else
+    return n / 2;
+}
+What will be the value calculated by the algorithm when making a call to F(2)?
+a) 23
+b) 20
+c) 15
+d) 27
+a
+
+4.11 Two recursive functions are written below, F and G:
+void F (int n);
+void G (int n);
+void F (int n) {
+  std :: cout << ? * ?;
+  if (n> 0)
+    G (n - 1);
+}
+void G (int n) {
+  std :: cout << ? * ?;
+  if (n> 1)
+    F (n - 2);
+}
+How many asterisk characters will be printed on the screen when calling F(13)?
+a) 7
+b) 8
+c) 9
+d) 10
+d
+
+4.12 Two recursive functions are written below, F and G:
+int F (int n);
+int G (int n);
+int F (int n) {
+  if (n> 2)
+    return F (n - 1) + G (n - 2);
+  else
+    return 1;
+}
+int G (int n) {
+  if (n> 2)
+    return G (n - 1) + F (n - 2);
+  else
+    return 1;
+}
+What will be the value calculated when calling F(7)?
+a) 22
+b) 15
+c) 21
+d) 17
+d
+
+4.13 Given a recursive algorithm:
+void F (int n) {
+  std :: cout << n;
+  if (n < 6) {
+    n = n + 1;
+    F (n + 1);
+    F (n * 2);
+    std :: cout << n;
+  }
+}
+a) 67
+b) 73
+c) 65
+d) 72
+b
+
+4.14 Two recursive functions are given:
+int F (int n) {
+  if (n> 1)
+    return F (n - 1) + G (n - 1);
+  else
+    return n - 1;
+}
+int G (int n) {
+  if (n> 1)
+    return G (n - 1) + F (n)
+  else
+    return n + 1;
+}
+What will be the value calculated when calling F(5)?
+a) 42
+b) 37
+c) 44
+d) 46
+a
+
+4.15 Two recursive functions are given:
+int F (int n) {
+  if (n> 1)
+    return F (n - 1) + G (n - 1);
+  else
+    return 2 * n;
+}
+int G (int n) {
+  if (n> 1)
+    return G (n - 1) + F (n)
+  else
+    return n - 2;
+}
+What will be the value calculated when calling F(5)?
+a) 22
+b) 17
+c) 5
+d) 12
+c
+
+4.16 Two recursive functions are given:
+int F (int n) {
+  if (n> 2)
+    return F (n - 1) + G (n - 2);
+  else
+    return 2;
+}
+int G (int n) {
+  if (n> 2)
+    return G (n - 1) + F (n - 2)
+  else
+    return 3;
+}
+What is the value calculated when calling G(6)?
+a) 26
+b) 23
+c) 17
+d) 20
+d
+
+4.17 What will the program display when calling F(6)?
+void F (int n) {
+  std :: cout << n;
+  if (n> = 3) {
+    F (n - 1);
+    F (n - 3)
+  }
+}
+a) 65432012320
+b) 6543212320
+c) 654320123
+d) 6543201232063
+a
+
+4.18 How many characters 'A' will the program display when calling F (10)?
+void F (int n) {
+  if (n> 0) {
+    std :: cout << 'B';
+    G (n - 1);
+  }
+}
+void G (int n) {
+  if (n> 1) {
+    std :: cout << 'A';
+    F (n - 2);
+  }
+}
+a) 2
+b) 3
+c) 4
+d) 5
+b
+
+4.19 Determine the sum of digits that the program will display when you call F (60)?
+void F (int n) {
+  if (n> 0) {
+    std :: cout << 3;
+    G (n - 1);
+  }
+}
+void G (int n) {
+  std :: cout << 2;
+  if (n> 1) {
+    std :: cout << 2;
+    F (n - 2);
+  }
+}
+a) 121
+b) 135
+c) 140
+d) 148
+c
+
+4.20 What the program will display when calling F(9)?
+void F (int n) {
+if (n> 3) {
+std :: cout << n;
+F (n - 3);
+   n ++;
+   F (n / 3);
+   }
+else
+  std :: cout << n;
+}
+a) 96323
+b) 9623
+c) 9632
+d) 9633
+a
+
+4.21 What the program will display when calling F(4)?
+void G (int n);
+void F (int n) {
+    if (n> 2) {
+        std :: cout << n;
+        F (n - 1);
+        G (n - 2);
+    }
+    else
+        std :: cout << n + 2;
+}
+void G (int n) {
+    std :: cout << n;
+    if (n> 2) {
+        G (n - 1);
+        F (n - 2);
+    }
+    else
+        std :: cout << n + 1;
+}
+a) 431223
+b) 43413
+c) 41223
+d) 4341223
+d
+
+4.22 What the program will display when calling F(6)?
+void G (int n);
+void F (int n) {
+    n--;
+    if (n> 2) {
+        std :: cout << n;
+        F (n - 1);
+        G (n - 2);
+    }
+    else
+        std :: cout << n + 2;
+}
+void G (int n) {
+    std :: cout << n;
+    if (n> 2) {
+        n--;
+        G (n - 1);
+        F (n - 2);
+    }
+    else
+        std :: cout << n + 1;
+}
+a) 533131212
+b) 53312312
+c) 533123121
+d) 33123121
+c
+
+4.23 What the program will display when calling F(6)?
+void F (int n) {
+std :: cout << 1;
+  if (1 <n) {
+    std :: cout << 2;
+   F (n / 4);
+    F (n - 3);
+  }
+}
+a) 12112112
+b) 1211211
+c) 12211
+d) 121121
+b
+
+4.24 What the program will display when calling F(6)?
+void F (int n) {
+    std :: cout << n + 3;
+    if (1 < n) {
+        F (n / 4);
+        F (n - 3);
+        cout << n;
+    }
+}
+a) 9463336
+b) 463336
+c) 6110003
+d) 946336
+a
+
+4.25 What the program will display when calling F(7)?
+void F (int n) {
+    n ++;
+    if (n> 3) {
+        std :: cout << n;
+        F (n - 3);
+        F (n / 3);
+    }
+    else
+        std :: cout << n;
+}
+a) 86423
+b) 86433
+c) 8642223
+d) 8642233
+d
+
+4.26. The algorithm for calculating the value of the F(n), where n is a positive integer, is given by the following relations:
+F (1) = 1
+F (n) = F (n - 1) * (n + 1), with n > 1
+What is the value of the function F(5)?
+a) 240
+b) 300
+c) 360
+d) 420
+c
+
+4.27 The algorithm for calculating the value of the function F (n), where n is a positive integer, is given by the following relations:
+F (1) = 1
+F (n) = F (n - 1) * (2 * n + 1), with n> 1
+What is the value of the function F (4)? 
+a) 285
+b) 315
+c) 300
+d) 270
+b
+
+4.28 The algorithm for calculating the value of the function F (n), where n is a positive integer, is given by the following relations:
+F (0) = 1, F (1) = 1
+F (n) = F (n - 1) + 2 * F (n - 2), with n> 1
+What is the value of the function F (6)? 
+a) 39
+b) 40
+c) 42
+d) 43
+d
+
+4.29 The algorithm for calculating the value of the function F (n), where n is a positive integer, is given by the following relations:
+F (0) = 1, F (1) = 1
+F (n) = F (n - 1) * F (n - 2) + 2, with n> 1
+What is the value of the function F (5)?
+a) 89
+b) 85
+c) 87
+d) 91
+c
+
+4.30 The algorithm for calculating the values of the functions F(w) and Q(w), where w is a positive integer, is given by the following relations:
+F (1) = 1; Q (1) = 1;
+F (w) = F (w - l) + 2 * Q (w - 1) with w > 1
+Q (w) = Q (w - l) - 2 * F (w - 1) with w > 1.
+What is the value of the function F(5) + Q(5)?
+a) 14
+b) -14
+c) 12
+d) -12
+b

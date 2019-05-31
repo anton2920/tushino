@@ -1,0 +1,239 @@
+﻿№1) What is pointer?
+1) Memory
+
+2) Memory Area
+
+3) The Address of the memory region
+
+4) A Variable that stores the address of the memory area
+No. 2) How does the Declaration of a pointer?
+
+1) <type> $<name>;
+
+2) <type> &<name>;
+
+3) <type> <name>;
+
+4) <type> *<name>;
+№3) Specify the "address taking" operator
+1) #
+2) $
+3) *
+4) &
+№4) Specify a dereference operator
+1) #
+2) $
+3) &
+4) *
+№5) Are the sizes of the pointers that indicate different types of data Equal
+?
+1) Depends on computer architecture
+
+2) Depends on data type
+
+3) Is Not equal to
+
+4) Is Equal to
+№6) What is a pointer type?
+1) the Address of a pointer
+
+2) the Address that holds the pointer
+
+3) What type of values can be entered into the variable
+
+4) the Type of variable whose address it contains
+№7) How would You describe the line of code "char c;"?
+
+1) Dereference
+
+2) taking the address of
+
+3) the Declaration of a pointer
+
+4) variable Declaration
+№8) How would You describe the line of code "char *c;"?
+
+1) Dereference
+
+2) taking the address of
+
+3) variable Declaration
+
+4) the Declaration of a pointer
+№9) How would You describe the line of code "p=&c;"?
+
+1) Dereference
+
+2) Take
+
+3) variable Declaration
+
+4) In the variable p contains the address of the variable c
+№10)What types of pointers are supported in C++?
+
+1) Connected and torn
+
+2) Regulated and unregulated
+
+3) Address and Reference
+
+4) Managed and unmanaged
+№11) why do we need gcnew?
+
+1) Allocate memory from "heap"
+
+2) To was
+
+3) the Same new, simply in the new standard so need to write
+
+4) Allocate memory for an instance of an object and return a reference to that object
+№12) What are managed pointers?
+
+1) pointer that can be controlled
+
+2) abstraction, as well as the same as a normal pointer
+
+3) No such signs
+
+4) Pointers of reference type
+№13) What character is used for managed pointers
+
+1) there are No managed pointers
+2) &
+3) *
+4) ^
+№14) What does a function pointer Declaration look like?
+
+1) *type (function name) (parameter_list);
+
+2) *function name (parameter_list);
+
+3) type (function_name) (parameter_list);
+
+4) type * (function name) (parameter_list);
+№15) What types of pointers are not supported in C++?
+
+1) Managed
+
+2) Unmanaged
+
+3) Unmanaged function pointers
+
+4) Managed function pointers
+№16) What is indirect access?
+
+1) Access via new operator
+
+2) Calling a function to a global variable
+
+3) Access to a static variable
+
+4) Access to a variable using a pointer
+№17) What arithmetic operations can not be performed with pointers?
+
+1) +
+
+2) -
+3) /
+
+4) All of the listed can be
+№18) Can I use pointer-to-pointer comparison operators?
+
+1) Only with pointers of the same type
+
+2) don't know
+
+3) No
+
+4) Yes
+№19) Can I use a void pointer?
+
+1) it is Possible only after connecting the library math.h
+2) don't know
+
+3) cannot Be
+
+4) can Be
+№20) What type of returns malloc();
+1) int
+2) int *
+3) void
+4) void *
+№21) What has no address?
+
+1) A variable of type int
+
+2) A variable of type void
+
+3) At the pointer to type void
+
+4) Have constants
+№22) Is it possible to assign a pointer to a physical address?
+
+1) cannot Be
+
+2) you Can
+
+3) don't know
+
+4) you Can, but you can not contact the address
+№23) What is the array name?
+1) Designer
+
+2) Pointer to the last element in the array
+
+3) a Pointer to an array
+
+4) Pointer to the first element in the array
+24) Can I access an array element as *(A+n)?
+
+1) Only in C++ you can
+
+2) don't know
+
+3) cannot Be
+
+4) can Be
+№25) How can I refer to the zero line of a two-dimensional array?
+1) (int *)&M[0]; 
+2) (int *)M[0]; 
+3) (int *)M;
+4) *M[0]
+№26) How can I change row elements?
+
+1) Can be directly modified in the character array
+
+2) don't know, because I work with string class
+
+3) C using the pointer to the type int
+
+4) C using the pointer to the characters in the character array
+№27) How can I refer to the n-th element of the array?
+1) A[n]
+2) *(A+n)
+3) *(&A[n-1]+1)
+4) *(A[n-1]+1)
+№28) What can't be created with pointers from the above?
+
+1) a Linked list
+
+2) Ragged array
+
+3) Dynamic array
+
+4) Class
+
+№29) What library do I need to connect to make pointers work?
+
+1) stdio.h
+
+2) malloc.h
+
+3) iostream
+
+4) library is not needed
+№30) Which of the following examples is incorrectly written
+1) int *a=5;
+2) int a=5;
+3) int *a;
+4) *int a;

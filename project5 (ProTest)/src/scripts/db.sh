@@ -1,0 +1,1 @@
+mkdir -p ${HOME}/.local/share/ProTest/ && cp -f ./db/data.sqlite ${HOME}/.local/share/ProTest/data.sqlite

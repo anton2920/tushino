@@ -1,0 +1,150 @@
+No.1) What is the file?
+1) There is no exact definition
+2) Label
+3) A name where data are stored
+4) The named area of an external bulk memory selected for storage of data array 
+No.2) What is the sector?
+1) Is the sector on a disk
+2) Part of the file
+3) Association of several clusters
+4) The minimum addressed information storage unit on external memory devices
+No. 3) What is a cluster?
+1) The minimum addressed information storage unit on external memory devices
+2) Part of the file
+3) 256 bytes
+4) Association of several sectors
+No. 4) What occurs when opening the file?
+1) File recording
+2) Working off of the scenario
+3) Work with the file
+4) A sheaf of an input-output flow with it
+No. 5) What is FILE?
+1) Object
+2) Identifier
+3) Data type
+4) Structure
+No. 6) For what needs the fopen function ();
+1) For work with files
+2) For closing of the file
+3) For opening of the file
+4) For return of the pointer on structure of FILE
+No. 7) How does the function fopen() prototype correctly look? 
+1) FILE *fopen(&name, type);
+2) FILE fopen(&name, type);
+3) FILE fopen(name, type);
+4) FILE *fopen(name, type);
+No. 8) Select what key it is used to open the file for reading?
+1) r+
+2) w
+3) a
+4) r
+No. 9) Select what key it is used to open the empty file for record?
+1) r
+2) r+ 
+3) a
+4) w
+No. 10) Select what key it is used to open the file for record in the end?
+1) r
+2) w
+3) r+ 
+4) and
+No. 11) Select what key it is used to open the file for a read and write?
+1) r
+2) w
+3) a
+4) r+ 
+No. 12) Select what key it is used to open the empty file for a read and write?
+1) r
+2) w
+3) a
+4) w+ 
+No. 13) Select what key it is used to open the file for reading and addition?
+1) r
+2) w
+3) a
+4) a+ 
+No. 14) What returns fopen ()
+1) Code
+2) File
+3) Open flow
+4) The pointer on an open flow
+No. 15) What returns fopen () in case of an error
+1) 1
+2) nullptr
+3) 0
+4) NULL
+No. 16) What is done by the fclose function (); 
+1) Checks for closing of the file
+2) Deletes the pointer on FILE
+3) Closes the file
+4) Closes the flow or flows connected with opened by means of the fopen function () files
+No. 17) What returns fclose (); in case of the closed flow
+1) NULL
+2) Code
+3) 1
+4) 0
+No. 18) What returns fclose (); in case of an error
+1) NULL
+2) Code
+3) 0
+4) EOF
+No. 19) What is the function parameter fgetc ();
+1) The pointer on any variable
+2) Any variable
+3) FILE flow
+4) The pointer on a FILE flow
+No. 20) What is done by the fgetc function ();
+1) Serves for updating of a flow
+2) Serves for opening of the file
+3) Gives the character from the file
+4) Returns the code of the read character
+No. 21) What it is necessary to add to the beginning of scanf printf gets puts that it were functions for work with files
+1) F
+2) f.
+3) file
+4) f
+No. 22) What library is necessary for file input in C++?
+1) <oistream>
+2) <ofstream>
+3) <iostream>
+4) <ifstream>
+No. 23) What library is necessary for a file output in C++?
+1) <oistream>
+2) <ifstream>
+3) <iostream>
+4) <ofstream>
+No. 24) What of the offered modes of opening is intended for opening of the file for reading?
+1) ios::app
+2) ios::out
+3) ios::ate
+4) ios::in
+No. 25) What of the offered modes of opening is intended for opening of the file for record?
+1) ios::app
+2) ios::in
+3) ios::read
+4) ios::out 
+No. 26) What of the offered modes of opening is intended for opening of the file with the index at the end of the file?
+1) ios::in
+2) ios::out
+3) ios::open
+4) ios::ate
+No. 27) What of the offered modes of opening is intended for opening of the file for record in the end of the file?
+1) ios::in
+2) ios::out
+3) ios::open
+4) ios::app 
+No. 28) What of the offered modes of opening is intended for removal of contents of the file if it exists?
+1) ios::app
+2) ios::delete
+3) ios::del
+4) ios::trunc
+No. 29) What of the offered modes of opening is intended for opening of the file in the binary mode?
+1) ios::app
+2) ios::b
+3) ios::bin
+4) ios::binary
+No. 30) In the catalog is 6 files: adobe.xls idol.xlsx london.xls adobe.xml odor.xlsx sdoba.xls Define  what of masks of them the specified group of files will be selected: adobe.xls idol.xlsx odor.xlsx sdoba.xls
+1) ?do*.xls
+2) *do*.x*
+3) ?do?.xls* 
+4) ?do?*.xls*

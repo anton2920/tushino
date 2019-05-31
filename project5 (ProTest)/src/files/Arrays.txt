@@ -1,0 +1,248 @@
+2. Arrays
+
+2.1 Array is
+1) general address. The array element is carried out by address and index
+2) sorted in memory elements of the same type, having a name. Array name element is located by array name and index
+3) ordered names. Array name element
+4) the instruction used in the process of writing the program to designate a comment.
+1
+
+2.2 Arrays are
+1) only one-dimensional
+2) one-dimensional and multidimensional
+3) only multidimensional
+4) only integers
+2
+
+2.3 How do you describe a variable to declare it as a one-dimensional array?
+1) int a[10];
+2) int a{10};
+3) int a[10][10];
+4) int a_10;
+1
+
+2.4 How to describe the variable a to declare it a two-dimensional array?
+1) int a[10];
+2) int a{10};
+3) int a{10}{10};
+4) int a[10][10];
+4
+
+2.5 What type of data can be in a one-dimensional array?
+1) only int type
+2) only float type
+3) any type
+4) char type only
+3
+
+2.6 What type of data can be in a multidimensional array?
+1) only float type
+2) only int type
+3) char type only
+4) any type
+4
+
+2.7 Specify the correct array declaration of 10 integers:
+1) int a[9];
+2) int a[10];
+3) float a[10];
+4) float a[9];
+2
+
+
+2.8 Indexing of elements in an array begins with: 
+1) 0
+2) 1
+3) 2
+4) -1
+1
+
+2.9 In which of the following lines is the appeal to the seventh element of the array, the size of the array is 10?
+1) mas(6)
+2) mas(7)
+3) mas[6]
+4) mas[7]
+3
+
+2.10 Which of the following examples made a mistake?
+1) int a[3] = {1, 2, 3};
+2) int a[3] = {1, 2};
+3) int a[] = {1, 2, 3};
+4) int a[3] = {1, 2, 3, 4};
+4
+
+2.11 What will be displayed after the execution of this code fragment: int a[5] = {}; for (int i = 0; i < 5; ++i) cout << a[i];
+1) 00000
+2) 01234
+3) 12345
+4) 0000
+1
+
+2.12 What is the sequence number of the last element of the array, the size of the array 19?
+1) 18 
+2) 19
+3) 17 
+4) 20
+1
+
+2.13 The array is given: 
+int m[3][4] = {
+{ 5, 6, 7, 8},
+{ 5, 6, 7, 8},
+{ 9, 10, 11, 12} };
+What value is contained in the element m[2][3]?
+1) 10
+2) 3
+3) 7
+4) 12
+4
+
+2.14  If there is a code 
+char a[8];
+cin >> a;
+and text is entered «Hello world», what will be in the array a?
+1) Hello
+2) Hello w
+3) Hello world
+4) wo
+1
+
+2.15 What will be printed as a result of a program fragment?
+char s [] = "abcd yuio";
+char * str = s;
+cout << str;
+1) runtime error
+2) abcd
+3) abcd yuio
+4) syntax error
+3
+
+2.16 Mark the correct function prototype using a multi-dimensional array as a parameter int m[10][2]:
+1) void F(int Ar[][], int sz);
+2) void F(int m[][2]);
+3) void F(int m[]);
+4) int F(int m[]);
+2
+
+2.17 If an array is specified as a function parameter, then the following is passed:
+1) pointer to its first element
+2) pointer to the last element of the array
+3) the value of the first element of the array
+4) the value of the last element of the array
+1
+
+2.18 What is the value of the 18th element after the execution of this code fragment
+int a[30]; 
+for (int i = 0; i < 30; ++i) 
+	a[i] = i;
+1) 16
+2) 17
+3) 18
+4) 19
+2
+
+2.19 What is the value of the 19th element after the execution of this code fragment 
+int a[30];
+for (int i = 0; i < 30; ++i)
+	a[i] = i;
+1) 17
+2) 18
+3) 19
+4) 20
+2
+
+2.20 Dan array. What is the value of s after executing this code fragment?
+int a[3][3] = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
+int s = 0; 
+for (int i = 0; i < 3; ++i) {\n
+	for (int j = 0; j < 3; ++j) \n
+		if (i == j)\n
+			s += a[i][j];\n
+    }
+1) 6
+2) 15
+3) 12
+4) 18
+2
+
+2.21 What is the value of the 21st element after the execution of this code fragment int a [30]; for (int i = 0; i <30; ++ i) a [i] = i;
+1) 20 
+2) 21
+3) 19
+4) 22
+1
+
+2.22 What is the value of the 22nd element after the execution of this code fragment int a[30]; for (int i = 0; i < 30; ++i) a[i] = i;
+1) 20
+2) 21
+3) 22
+4) 23
+2
+
+2.23 What is the value of the 23rd element after the execution of this code fragment int a[30]; for (int i = 0; i < 30; ++i) a[i] = i;
+1) 21
+2) 24
+3) 22
+4) 23
+3
+ 
+2.24 What is the value of the 24th element after the execution of this code fragment int a[30]; for (int i = 0; i < 30; ++i) a[i] = i;
+1) 22
+2) 25
+3) 24
+4) 23
+4
+
+2.25 What is the value of the 25th element after the execution of this code fragment int a[30]; for (int i = 0; i < 30; ++i) a[i] = i;
+1) 24
+2) 23
+3) 25
+4) 26
+1
+
+2.26 The program uses a one-dimensional integer array A with indices from 0 to 9.
+The values of the elements are 6, 7, 3, 8, 5, 1, 2, 0, 9, 4, respectively, that is, A [0] = 6, A [1] = 7, and so on.
+Determine the value of the variable c after executing the next fragment of this program.
+c = 0;
+for (i = 1;i < 10;i++)
+  if (A[i] < A[0])
+  {
+    c++;
+    t = A[i];
+    A[i] = A[0];
+    A[0] = t;
+  }
+}
+1) 1
+2) 3
+3) 2
+4) 4
+2
+
+2.27 What is the value of the 27th element after the execution of this code fragment int a[30]; for (int i = 0; i < 30; ++i) a[i] = i;
+1) 25
+2) 27
+3) 26
+4) 28
+3
+
+2.28 What is the value of the 28th element after the execution of this code fragment int a[30]; for (int i = 0; i < 30; ++i) a[i] = i;
+1) 28
+2) 29
+3) 30
+4) 27
+4
+
+2.29 What is the value of the 29th element after the execution of this code fragment int a[30]; for (int i = 0; i < 30; ++i) a[i] = i;
+1) 28
+2) 27
+3) 29
+4) 30
+1
+
+2.30 What is the value of the 30th element after the execution of this code fragment int a[30]; for (int i = 0; i < 30; ++i) a[i] = i;
+1) 28
+2) 29
+3) 30
+4) 31
+2

@@ -1,0 +1,155 @@
+﻿№1 The data that is created, initialized and destroyed at the request of the programmer are called ...
+1) global
+2) static
+3) kinematic
+4) dynamic
+№2 What memory is allocated before the program starts, at the stage of compilation and assembly?
+1) global
+2) dynamic
+3) stack
+4) static
+№3 What memory is allocated at the moment of entering the function or block and is released at the moment of exit from the function or block
+1) global
+2) dynamic
+3) static
+4) stack
+№4 What is malloc used for?
+1) Release from physical culture
+2) Free up memory
+3) Grab the world
+4) Capture a section of memory
+№5 What is free used for?
+1) Release from physical culture
+2) Capture a section of memory
+3) Grab the world
+4) Free up memory
+№6 How does the malloc prototype look right?
+1) int *malloc(size_t n);
+2) void malloc(size_t n);
+3) int malloc(size_t n);
+4) void *malloc(size_t n);
+№7 How does the prototype of funtsky free look right?
+1) void *free(void *p);
+2) int *free(void *p);
+3) int free(void *p);
+4) void free(void *p);
+№8 What does n mean in malloc (size_t n)?
+1) the number of elements in the array
+2) option number
+3) pointer to the allocated memory
+4) size of captured area in bytes
+№9 What does malloc return if memory is allocated?
+1) throws an exception
+2) option number
+3) pointer to the allocated memory
+4) the address of the captured memory area
+№10 What does malloc return in case the memory is not allocated?
+1) throws an exception
+2) nullptr
+3) 0
+4) NULL
+№11 Which library contains the prototypes of malloc and free functions?
+1) math.h
+2) cstring
+3) string
+4) stdlib.h
+№12 What library do I need to connect for the new and delete functions to work?
+1) math.h
+2) stdlib.h
+3) iostream
+4) no
+№13 In C p = (double *) malloc (sizeof (double)); and how in C ++?
+1) p = double new;
+2) p = double;
+3) p = new;
+4) p = new double;
+№14 How to initialize?
+1) double *p = new double=1.5;
+2) it is impossible to initialize
+3) double *p = new double; *p = 1.5;
+4) double *p = new double(1.5);
+№15 How to allocate memory for an array of size m * n?
+1) a = new m*n*double
+2) no way
+3) a = new double;
+4) a = new double[m * n];
+№16 How to free the memory allocated for the array?
+1) del[]
+2) del
+3) delete
+4) delete[]
+№17 With the help of which you can free up the memory allocated by the operator new?
+1)del
+2)free
+3)delete и free
+4)delete
+№18 What is new used for?
+1) Release from physical culture
+2) Free up memory
+3) Grab the world
+4) Capture a section of memory
+№19 What is delete used for?
+1) Release from physical culture
+2) Capture a section of memory
+3) Grab the world
+4) Free up memory
+№20 Is it possible to assign a pointer value of the same type to a pointer of the same type?
+1) no
+2) need a special function
+3) I do not know
+4) you can
+№21 What is the function calloc () for?
+1) Allocates memory with a length of n bytes and returns a pointer to the beginning of the allocated memory.
+2) Releases the previously allocated block of memory, at the beginning of which is indicated by the pointer n
+3) Changes the size of the previously allocated block of memory, at the beginning of which is indicated by the pointer a, to the size of n bytes
+4) Allocates memory for n elements of m bytes each and returns a pointer to the beginning of the allocated memory.
+№22 What is the realloc () function for?
+1) Allocates memory with a length of n bytes and returns a pointer to the beginning of the allocated memory.
+2) Releases the previously allocated block of memory, at the beginning of which is indicated by the pointer n
+3) Allocates memory for n elements of m bytes each and returns a pointer to the beginning of the allocated memory.
+4) Changes the size of the previously allocated block of memory, at the beginning of which is indicated by the pointer a, to the size of n bytes
+№23 Choose the right prototype for the calloc () function
+1) void *calloc(int n, int m);
+2) void calloc(int n, int m);
+3) void calloc(unsigned n, unsigned m);
+4) void *calloc(unsigned n, unsigned m);
+№24 When does a data leak occur?
+1) When not written at the end of main return 0;
+2) When you put a simple password
+3) When you do not change the password during the year
+4) When I forgot to free the allocated memory
+№25 How to cast a pointer to type int
+1) p = int*malloc(size * sizeof(int));
+2) p = int malloc(size * sizeof(int));
+3) p = malloc(size * sizeof(int));
+4) p = (int*) malloc(size * sizeof(int));
+№26 How to create a dynamic two-dimensional array?
+1) Refer to the preprocessor
+2) There is a special function MakeArray ()
+3) Just like a regular array
+4) First you need to create an array of pointers, then each of the elements of this array to assign the address of the new array
+№27 What is not the advantage of a dynamic array over the usual
+1) Create arrays of "irregular shape", that is, an array of strings, each of which has its own size
+2) Work separately with each row of the array: free up memory or resize a row
+3) You can change the size of the array when working with it
+4) A dynamic array is easier to pass into functions.
+№28 Why do hanging signs appear?
+1) When we did not specify what type of pointer
+2) When memory is not freed
+3) The programmer deliberately "pushes" them onto the stack.
+4) When, after clearing the memory, did not change the value of the pointer to NULL
+№29 What happens if you call malloc with a null request
+1) Error
+2) an address that can be used, but cannot be addressed
+3) Return NULL
+4) Behavior is not predetermined
+№30 Lucky Ticket! What is the name of the rector of our university?
+1) Simkin
+2) Popkov
+3) Shkaberin
+4) Fedonin
+№31 What is dynamic random access memory?
+1) Random Access Memory based on the principle of magnetic recording
+2) Volatile part of the computer memory system in which executable computer code is stored during computer operation
+3) A variety of semiconductor technology electrically reprogrammable memory
+4) The type of memory, characterized by the use of semiconductor materials, volatility and the ability to access data stored in arbitrary memory cells

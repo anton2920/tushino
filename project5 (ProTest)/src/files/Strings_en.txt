@@ -1,0 +1,235 @@
+Strings
+3.1 Which header file do I need to connect to use strings in C?
+a) #include <stdio.h>
+b) #include <string.h>
+c) #include <stdlib.h>
+d) #include <ctype.h>
+b
+
+3.2 What kind of arrays are used to store strings?
+a) char
+b) int
+c) short
+d) float
+a
+
+3.3 How many bytes in memory does the expression "abc" take?
+a) 2
+b) 3
+c) 4
+d) 5
+c
+
+3.4 Which function allows you to read lines from the console?
+a) getline ();
+b) scanf ();
+c) gets ();
+d) puts ();
+c
+
+3.5 Which function allows you to output strings to the console?
+a) putline ();
+b) printf ();
+c) str_print ();
+d) puts ();
+d
+
+3.6 Which character ends the string "abc"?
+a) c
+b) '\0'
+c) "
+d) '0'
+b
+
+3.7 Which qualifier in the format string of the printf function should I use to output the string?
+a) %s
+b) %c
+c) %l
+d) %str
+a
+
+3.8 What does the strcpy (s1, s2) function do?
+a) performs a byte copying of characters from the string s2 to the string s1.
+b) performs byte-wise copying of characters from string s1 to string s2.
+c) compare strings s1 and s2.
+d) remove the string s2 from the string s1.
+a
+
+3.9 What does the strncpy (s1, s2, n) function do?
+a) performs a byte copying of characters from the string s2 to the string s1.
+b) performs byte-wise copying of characters from string s1 to string s2.
+c) performs a byte copy of n characters from the string s2 to the string s1.
+d) performs byte-by-copy n characters from s1 to s2.
+c
+
+3.10 What does the strcat(s1, s2) function do?
+a) combines the string s2 with the string s1. The result is saved in s1.
+b) combines the string s2 with the string s1. The result is saved in s2.
+c) deletes the string s2 from the string s1.
+d) remove the string s1 from the string s2.
+a
+
+3.11 What does the strncat(s1, s2, n) function do?
+a) combines the string s2 with the string s1. The result is saved in s1.
+b) combines the string s2 with the string s1. The result is saved in s2.
+c) combines n characters of the string s2 with the string s1. The result is saved in s2.
+d) combines n characters of string s2 with string s1. The result is saved in s1.
+d
+
+3.12 What is the same after this code fragment? int a = strlen ("Arthas");
+a) 5
+b) 6
+c) 7
+d) 8
+b
+
+3.13 What is contained in str1 after executing this code fragment?
+char str1 [5] = "abc"; 
+char str2 [5] = "efg"; 
+strncpy (str1, str2, 2);
+a) abc
+b) efg
+c) efc
+d) abg
+c
+
+3.14 What does str1 contain after executing this code fragment?
+char str1 [5] = "abc"; 
+char str2 [5] = "efg"; 
+strcpy (str1, str2);
+a) abc
+b) abcefg
+c) efg
+d) abcefg
+c
+
+3.15 What is contained in str1 after executing this code fragment?
+char str1 [10] = "ab"; 
+char str2 [10] = "efg"; 
+strncpy (str1, str2, 1);
+a) efg
+b) abe
+c) efga
+d) eb
+d
+
+3.16 What does str1 contain after executing this code fragment? 
+char str1 [10] = "ab"; 
+char str2 [10] = "efg"; 
+strcat (str1, str2);
+a) ab
+b) abefg
+c) efg
+d) efgab
+b
+
+3.17 What is contained in str1 after executing this code fragment? 
+char str1 [10] = "ab"; 
+char str2 [10] = "efg"; 
+strncat (str1, str2,2);
+a) abef
+b) abefg
+c) efgab
+d) efab
+a
+
+3.18 What does the function strcmp (char * s1, char * s2) return if s1 = "a", s2 = "b"?
+a) a
+b) b
+c) 0
+d) 1
+c
+
+3.19 What does the function strcmp (char * s1, char * s2) return if s1 = "ab", s2 = "ba"?
+a) ab
+b) ba
+c) 0
+d) 1
+c
+
+3.20 What does the function strncmp (char * s1, char * s2, int n) return if s1 = "aab", s2 = "aabcd" and n = 3?
+a) aab
+b) aabcd
+c) 0
+d) 1
+d
+
+3.21 What the strlen(char * s) function returns?
+a) the number of characters per line, including '\0'
+b) the number of characters per line, not including '\0'
+c) the number of bytes allocated for storing the string
+d) the number of bits allocated for storing the string
+b
+
+3.22 What does the function char * strset (char * s, char c) do?
+a) fills the string s with characters whose code is equal to the value c, returns a pointer to the string s
+b) replaces the first n characters of the string s with characters whose code is c, returns a pointer to the string s
+c) executes the counting of elements whose code is equal to c, returns the number of such elements
+d) count the first n elements whose code is equal to c, returns the number of such elements
+a
+
+3.23 char * strnset (char * s, char c, int n)
+a) fills the string s with characters whose code is equal to the value c, returns a pointer to the string s
+b) replaces the first n characters of the string s with characters whose code is c, returns a pointer to the string s
+c) executes the counting of elements whose code is equal to c, returns the number of such elements
+d) count the first n elements whose code is equal to c, returns the number of such elements
+b
+
+3.24 What the strlen("AYAYA") function returns?
+a) 4
+b) 5
+c) 6
+d) 7
+b
+
+3.25 What is contained in str1 after executing this code fragment? char str1 [5] = "ab"; _strset (str1, 'a');
+a) ab
+b) aaaa
+c) aa
+d) aaaaa
+c
+
+3.26 What is contained in str1 after executing this code fragment? 
+char str1 [5] = "ab"; 
+_strnset (str1, 'a', 4);
+a) abaa
+b) abaaa
+c) aaaa
+d) aa
+d
+
+3.27 What does str1 contain after executing this code fragment? 
+char str1 [5] = "ab"; 
+_strnset (str1, 'a', 1);
+a) ab
+b) aba
+c) a
+d) aa
+a
+
+3.28 What does str1 contain after executing this code fragment? 
+char str1 [5] = "ab"; 
+_strnset (str1, 'a', 2);
+a) abaa
+b) aa
+c) a
+d) aba
+b
+
+3.29 What is contained in str1 after executing this code fragment? 
+char str1 [5] = "ab"; 
+_strnset(str1, 'a', 3);
+a) aaa
+b) abaaa
+c) aa
+d) aba
+c
+
+3.30 What does str1 contain after executing this code fragment? 
+char str1 [5] = "ab"; 
+_strnset (str1, 'a', 5);
+a) aa
+b) aaaa
+c) aaaaa
+d) abaaa
+a
